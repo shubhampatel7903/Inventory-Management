@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+body {
+background:url(img12.jpg);
+ background-repeat:no-repeat;
+ background-size:cover;
+}
+table {
+background-color:
+align:center;
+//margin-left: auto;  
+margin-right: auto;
+ margin-top:230px;         
+}
+
+tr,td{
+font-size:30px;
+}
+
+
+input[type=text]{
+width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  outline: none;
+   border-radius:6px;
+}
+
+input[type=text]:focus {
+  background-color: lightblue;
+}
+
+
+.button {
+  background-color:#04AA6D; /* Green */ 
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #04AA6D;
+  border-radius:20px;
+}
+
+.button1:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+ border-radius:20px;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button2:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+ border-radius:20px;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.button3:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #7F00FF;
+ border-radius:20px;
+}
+
+.button4:hover {
+  background-color: #7F00FF;
+  color: white;
+}
+
+.button4:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+ border-radius:20px;
+}
+
+.button5:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.button5:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+</style>
+</head>
+<body>
+<form name=f metdod=post action="provider.jsp">
+<table>
+<tr>
+<th colspan=2>Provider</th>
+</tr>
+<tr>
+<td>Id</td>
+<td><input type="text" name=t1></td>
+</tr>
+
+<tr>
+<td>Nm</td>
+<td><input type="text" name=t2></td>
+</tr>
+
+<tr>
+<td>Address</td>
+<td> <input type="text" name=t3></td>
+</tr>
+
+<tr>
+<td colspan=2> 
+<input type=reset value=New onclick=a() class="button button1">
+ <input type=submit value=Save name=b1 class="button button2">
+ <input type=submit value=AllSearch name=b1 class="button button3">
+ <input type=submit value=PSearch name=b1 class="button button4">
+ <input type=button value=Home onclick=My_Menu() class="button button5">
+ <input type=button value=SpecialSearch onclick=special_src()  class="button button5">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
+
+<script>
+function My_Menu()
+{
+	window.open("MyMenu.html","_self")
+	}
+function special_src()
+{
+	window.open("Specialsearch.html")
+	}			
+</script>
